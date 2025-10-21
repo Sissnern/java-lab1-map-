@@ -18,10 +18,23 @@ public class Universitaet {
             if(notenArray[i] < 38){
                 int[] temp = copyArray(result);
                 result = new int[temp.length+1];
-                result = copyArray(temp);
-                result[result.length-1]=i;
+                for(int j = 0; j < temp.length; j++){
+                    result[j] = temp[j];
+                }
+                result[result.length-1]=notenArray[i];
             }
         }
         return result;
     }
+
+    //Ex 1 - 2
+    public static int durschschnittwert(int[] notenArray){
+        int avg = 0;
+        for(int n :  notenArray){
+            avg+=n;
+        }
+        return avg/notenArray.length;
+    }
+
+    //Ex 1 - 3
 }
