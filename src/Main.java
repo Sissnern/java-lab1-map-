@@ -23,7 +23,7 @@ public class Main {
         int[] array = {4, 8, 3, 10, 17};
         System.out.print("\nMaximum number: " + Aufgabe2.max(array));
         System.out.print("\nMinimum number: " + Aufgabe2.min(array));
-//        System.out.print("\nMaximum number: " + Aufgabe2.maxSum(array));
-//        System.out.print("\nMaximum number: " + Aufgabe2.minSum(array));
+        System.out.print("\nMaximum number: " + Aufgabe2.maxSum(array));
+        System.out.print("\nMaximum number: " + Aufgabe2.minSum(array));
     }
 }

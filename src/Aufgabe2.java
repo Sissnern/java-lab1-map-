@@ -21,4 +21,21 @@ public class Aufgabe2 {
         return min;
     }
 
+    //Ex 2 - 3
+
+    public static int maxSum(int[] array) {
+        int sum = 0;
+        for (int n : array){
+            sum += n;
+        }
+        return sum - min(array);
+    }
+
+    public static int minSum(int[] array) {
+        int sum = 0;
+        for (int n : array){
+            sum += n;
+        }
+        return sum - max(array);
+    }
 }
