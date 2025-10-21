@@ -25,5 +25,16 @@ public class Main {
         System.out.print("\nMinimum number: " + Aufgabe2.min(array));
         System.out.print("\nMaximum number: " + Aufgabe2.maxSum(array));
         System.out.print("\nMaximum number: " + Aufgabe2.minSum(array));
+
+
+        System.out.print("\n----------------------------------------------");
+        System.out.print("\nProblem 3-------------------------------------");
+
+        int[] array1 = {8,3,0,0,0,0,0,0,0};
+        int[] array2 = {5,4,0,0,0,0,0,0,0};
+        System.out.print("Summe: ");
+        System.out.print("Differenz: ");
+        System.out.print("Multiplikation: ");
+        System.out.print("Division: ");
     }
 }
