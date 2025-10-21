@@ -13,11 +13,15 @@ public class Universitaet {
 
     //Ex 1 - 1
     public static int[] nichtAusreichenderNoten(int[] notenArray){
-        int[]
+        int[] result =new int[0];
         for(int i=0; i<notenArray.length; i++){
-            if(notenArray[i] % 5 < 3){
-
+            if(notenArray[i] < 38){
+                int[] temp = copyArray(result);
+                result = new int[temp.length+1];
+                result = copyArray(temp);
+                result[result.length-1]=i;
             }
         }
+        return result;
     }
 }
