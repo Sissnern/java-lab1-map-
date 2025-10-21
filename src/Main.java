@@ -15,5 +15,14 @@ public class Main {
         for (int n : roundedgrades) {
             System.out.print(n + " ");
         }
+        System.out.print("\nmaximum rounded grade: " + Universitaet.maximalAbgerundetenNoten(grades));
+
+        System.out.print("\n----------------------------------------------");
+        System.out.print("\nProblem 2-------------------------------------");
+
+        int[] array = {4, 8, 3, 10, 17};
+        System.out.print("\nMaximum number: " + Aufgabe2.max(array));
+        System.out.print("\nMinimum number: " + Aufgabe2.min(array));
+
     }
 }

@@ -56,5 +56,18 @@ public class Universitaet {
         return result;
     }
 
-    //Ex
+    //Ex 1 - 4      (cea mai mare nota rotunjita)
+    public static int maximalAbgerundetenNoten(int[] notenArray){
+        int max = 0;
+        for(int n :  notenArray){
+            if(n % 5 == 3 || n % 5 == 4){
+                if(n > max){
+                    max = n;
+                }
+            }
+        }
+        return max;
+    }
 }
+
+
