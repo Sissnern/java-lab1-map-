@@ -41,12 +41,16 @@ public class Universitaet {
         int[] result =new int[notenArray.length];
         for(int i=0; i<notenArray.length; i++){
             if(notenArray[i] >= 38){
+                result[i] = notenArray[i];
                 if(notenArray[i] % 5 == 3){
                     result[i] = notenArray[i] + 2;
                 }
                 if(notenArray[i] % 5 == 4){
                     result[i] = notenArray[i] + 1;
                 }
+            }
+            else {
+                result[i] = notenArray[i];
             }
         }
         return result;
